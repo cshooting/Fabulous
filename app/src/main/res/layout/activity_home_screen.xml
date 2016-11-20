@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sports.a511.fabulous.HomeScreen">
+
+    <include layout="@layout/titlebar"
+        android:id="@+id/titlebar">
+    </include>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/titlebar"
+        android:layout_above="@+id/menu"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/id_content">
+    </FrameLayout>
+
+
+    <include layout="@layout/menu">
+    </include>
+</LinearLayout>
