@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Fabulous</string>
+    <string name="sign">签到</string>
+    <string name="sign_succeed_today">今日签到成功，增加积分</string>
+    <string name="sure">确定</string>
+    <string name="have_signed" >已签到</string>
+    <string name="you_have_sign" ><Data><![CDATA[<font color="%1$s">您已连续签到 </font><font color="%2$s">%3$d</font> <font color="%1$s">天，累计获得积分</font>]]></Data></string>
+    <string name="much_score_int">%1$d 分</string>
 </resources>

@@ -2,6 +2,7 @@ package com.sports.a511.fabulous;
 
 import android.app.Activity;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -10,6 +11,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class HomeScreen extends FragmentActivity implements View.OnClickListener{
@@ -26,20 +28,20 @@ public class HomeScreen extends FragmentActivity implements View.OnClickListener
     private Fragment mtab_discovery;
     private Fragment mtab_me;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_home_screen);
-
-
         initView();
         initEvent();
         setSelect(0);
     }
+
+//    public void Calendar_onClick(View view) {
+//        Intent i = new Intent(HomeScreen.this, CalendarActivity.class);
+//        startActivity(i);
+//    }
 
     private void initEvent() {
         mTab_Training.setOnClickListener(this);
@@ -138,12 +140,9 @@ public class HomeScreen extends FragmentActivity implements View.OnClickListener
         }
 
     }
-
     private void resetImgs() {
         ImageBtn_Training.setImageResource(R.drawable.ico_training);
         ImageBtn_Discovery.setImageResource(R.drawable.ico_discovery);
         ImageBtn_Me.setImageResource(R.drawable.ico_me);
     }
-
-
 }

@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true">
-
-        <TextView
-            android:text="Discovery"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:gravity="center"
-            android:textSize="30dp"
-            android:paddingLeft="10dp"/>
-
-
-    </LinearLayout>
-
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:text="推荐阅读"
+                android:textColor="#000000"
+                android:textStyle="italic"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:id="@+id/textView" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/pic_read"/>
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:text="精选教学"
+                android:textColor="#000000"
+                android:textStyle="italic"
+                android:textSize="20dp"
+                android:gravity="center" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/pic_video"/>
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:text="每日打卡"
+                android:textColor="#000000"
+                android:textStyle="italic"
+                android:textSize="20dp"
+                android:gravity="center" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:onClick="Calendar_onClick"
+                android:id="@+id/ImageButtonCalendar"
+                android:src="@drawable/pic_calendar"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
